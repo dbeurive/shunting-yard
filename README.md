@@ -6,7 +6,7 @@ This algorithm is used to convert infix expressions (ex: `1+2+3`) into postfix e
 
 # Dependencies
 
-You must install the CPAN package [`HOP::Parser`](https://github.com/dbeurive/shunting-yard).
+You must install the CPAN package [`HOP::Parser`](http://search.cpan.org/~xav/HOP-Parser-0.03/lib/HOP/Parser.pm).
 
 Just type: `cpan -i HOP::Parser`
 
@@ -45,7 +45,7 @@ Otherwise, just type `perl test.pl`.
     RPN:    1, 3, +, 6, 4, ^, 8, *, +
 
     Infix:  1/2*3+12%
-    RPN:    , 2, /, 3, *, 12, %, +
+    RPN:    1, 2, /, 3, *, 12, %, +
 
     Infix:  1+2/3 > 10
     RPN:    1, 2, 3, /, +, 10, >
